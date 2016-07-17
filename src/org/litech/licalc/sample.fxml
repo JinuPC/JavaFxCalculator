@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="500.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" onMouseClicked="#mouseClickedaction" onMouseDragged="#mouseDraggedaction" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: green;" styleClass="panelayout" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.litech.licalc.Controller">
+    <children>
+        <HBox alignment="BOTTOM_RIGHT" layoutX="-1.0" prefHeight="29.0" prefWidth="400.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#closeProgram" prefHeight="25.0" prefWidth="15.0" style="-fx-background-color: green;" text="X" textFill="#ebe7e7">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <VBox layoutX="1.0" layoutY="36.0" prefHeight="463.0" prefWidth="400.0" style="-fx-background-color: green;">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="outputBox" alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="332.0" text="0">
+                            <font>
+                                <Font size="29.0" />
+                            </font></TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="105.0" prefWidth="400.0" spacing="30.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="1" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="2" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="3" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performControl" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="+" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="105.0" prefWidth="400.0" spacing="30.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="4" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="5" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="6" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performControl" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="-" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="105.0" prefWidth="400.0" spacing="30.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="7" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="8" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="9" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performControl" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="x" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="105.0" prefWidth="400.0" spacing="30.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#performNumber" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="0" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performControl" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="R" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performControl" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="=" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#performControl" onMouseEntered="#animateButton" onMouseExited="#ResetButtonAnimation" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="/" textAlignment="CENTER">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>
