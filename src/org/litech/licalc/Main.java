@@ -12,11 +12,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         pStage = primaryStage;
+        //getting layout from fxml file
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setScene(new Scene(root, 400, 500));
-
         primaryStage.show();
     }
 
